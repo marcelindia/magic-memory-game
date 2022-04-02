@@ -43,8 +43,7 @@ function App() {
         });
         resetTurn();
       } else {
-        setCards(false);
-        resetTurn();
+        setTimeout(() => resetTurn(), 1000);
       }
     }
   }, [choiceOne, choiceTwo]);
